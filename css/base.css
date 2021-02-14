@@ -1,0 +1,161 @@
+/*    RESET CSS   */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BASE */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+html {
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.backToTop {
+    color: rgb(208 145 5 / 50%);
+    border: none;
+    background: transparent;
+    position: fixed;
+    top: 90vh;
+    left: 85vw;
+    outline: none;
+    display: none;
+}
+
+.backToTop:hover {
+    cursor: pointer;
+    color: rgb(255 188 0);
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-self: center;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+}
+
+.body--animationFadeIn {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+/*animations*/
+@keyframes flash {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-image: url("../media/loader_bg1.jpg");
+    background-size: cover;
+}
+
+.preloader__animation {
+    border: 16px solid #181818;
+    border-radius: 50%;
+    border-top: 16px double #b69013;
+    border-bottom: 16px double #b69013;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.preloader__text {
+    position: absolute;
+    top: 49%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 5rem;
+    color: #151515;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    animation: flash2 1s linear infinite;
+}
+
+@keyframes flash2 {
+    0% {opacity: 0; }
+    100% { opacity: 1; }
+}
