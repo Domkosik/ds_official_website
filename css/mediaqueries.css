@@ -158,13 +158,13 @@
         display: flex;
         flex-direction: column;
         width: 25rem;
-        padding: 2rem;
+        padding: 2rem 2rem 0 2rem;
     }
     .section__break{
         width: 100%;
     }
     .section__quotation{
-        margin-right: 6rem;
+        margin-right: 5rem;
     }
     .section__skills{
         align-items: flex-end;
@@ -204,9 +204,6 @@
     .section__flexColumn1{
         margin-right: 4rem;
     }
-    .section__quotation{
-        margin-right: 10rem;
-    }
     .section_innerFlex {
         margin-right: 12rem;
     } 
@@ -214,7 +211,7 @@
         margin-right: 10rem;
     }   
     .section__quotation{
-        margin-right: 16rem;
+        margin-right: 15rem;
     }
     .section__slider {
         max-width: 65%;
